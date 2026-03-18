@@ -1,10 +1,7 @@
 package com.javanauta.usuario.infrastructure.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 
 import java.util.Collection;
@@ -16,6 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @Entity // Apontamento informando ao Spring, que é uma tabela do banco de dados
 @Table(name = "usuario") // Nome da tabela no banco de dados
+@Builder
 
 public class Usuario {
 
